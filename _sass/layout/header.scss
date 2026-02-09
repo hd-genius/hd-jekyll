@@ -28,9 +28,9 @@ $bounce-spacing: 100ms;
 }
 
 .ellipsis-icon {
-    $dot-radius: 7;
+    $dot-radius: 7px;
     $dot-diameter: $dot-radius * 2;
-    $dot-spacing: 7;
+    $dot-spacing: 7px;
     $dot-offset: $dot-diameter + $dot-spacing;
 
     height: 20;
@@ -42,7 +42,7 @@ $bounce-spacing: 100ms;
         position: relative;
         stroke: black;
         fill: white;
-        stroke-width: 2;
+        stroke-width: 1px;
         r: $dot-radius;
         cy: 10px;
         cx: calc(#{$dot-offset} * var(--dot-index) + #{$dot-radius});
