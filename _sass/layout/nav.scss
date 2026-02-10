@@ -1,20 +1,54 @@
 #site-nav-menu {
+    position: sticky;
+    top: 0;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     text-align: center;
     padding: 0;
+    flex-grow: 0;
+    overflow: scroll;
+    width: 30ch;
+    max-width: 100vw;
+    background-color: $block-background-color;
+    transition: width 500ms;
+    border-right: solid 1px black;
   
     &:not(.shown) {
-        min-height: 0;
-        max-height: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-top: -0.5rem;
-        margin-bottom: 0.5rem;
-        overflow: hidden;
-        border-width: 0;
-        box-shadow: 0 0 0 #00000088;
+        width: 0;
+    }
+
+    @media screen and (width < 500px) {
+        position: fixed;
+        left: 0;
+        width: 100vw;
+        transition-property: left;
+        z-index: 10000;
+
+        &:not(.shown) {
+            left: -100vw;
+        }
+    }
+}
+
+#nav-header {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+}
+
+#nav-close-button {
+    font-size: 3em;
+    padding: 0;
+    margin: 0.25em;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    svg {
+        height: 1em;
+        width: 1em;
     }
 }
 

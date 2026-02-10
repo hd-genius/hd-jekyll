@@ -36,18 +36,18 @@
     <link href="/assets/hd-jekyll.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coda">
-    <script async src="/assets/hd-jekyll.js" type="application/javascript"></script>
+    <script src="/assets/hd-jekyll.js" type="application/javascript"></script>
 </head>
 <body>
-    <div id="floating-header">
-        {% include header.html %}
+    {% include nav.html %}
     
-        {% include nav.html %}
+    <div id="content-area">
+        {% include header.html %}
+
+        <main>
+            {{ content }}
+        </main>
+    
+        {% include footer.html %}
     </div>
-
-    <main>
-        {{ content }}
-    </main>
-
-    {% include footer.html %}
 </body>
