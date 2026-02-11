@@ -1,53 +1,55 @@
-<nav id="site-nav-menu" aria-label="site navigation" aria-hidden="true" role="navigation">
-    <div id="nav-header">
-        <button id="nav-close-button">
-            <svg
-            width="100"
-            height="100"
-            viewBox="0 0 26.458333 26.458333"
-            version="1.1"
-            id="svg1"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:svg="http://www.w3.org/2000/svg">
-                <defs
-                    id="defs1" />
-                <g
-                    id="layer1">
+<div id="site-nav-menu-displacement-wrapper">
+    <nav id="site-nav-menu" aria-label="site navigation" aria-hidden="true" role="navigation">
+        <div id="nav-header">
+            <button id="nav-close-button">
+                <svg
+                width="100"
+                height="100"
+                viewBox="0 0 26.458333 26.458333"
+                version="1.1"
+                id="svg1"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:svg="http://www.w3.org/2000/svg">
+                    <defs
+                        id="defs1" />
                     <g
-                    id="g1"
-                    transform="rotate(-45,11.697191,13.543143)">
-                    <circle
-                        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0389809"
-                        id="path1"
-                        cx="2.2594509"
-                        cy="14.357726"
-                        r="2.2826638" />
-                    <use
+                        id="layer1">
+                        <g
+                        id="g1"
+                        transform="rotate(-45,11.697191,13.543143)">
+                        <circle
+                            style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0389809"
+                            id="path1"
+                            cx="2.2594509"
+                            cy="14.357726"
+                            r="2.2826638" />
+                        <use
+                            x="0"
+                            y="0"
+                            xlink:href="#path1"
+                            id="use1"
+                            transform="translate(22.249946)" />
+                        <rect
+                            style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0511731"
+                            id="rect1"
+                            width="22.125019"
+                            height="4.569108"
+                            x="2.3065777"
+                            y="12.078227" />
+                        </g>
+                        <use
                         x="0"
                         y="0"
-                        xlink:href="#path1"
-                        id="use1"
-                        transform="translate(22.249946)" />
-                    <rect
-                        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0511731"
-                        id="rect1"
-                        width="22.125019"
-                        height="4.569108"
-                        x="2.3065777"
-                        y="12.078227" />
+                        xlink:href="#g1"
+                        id="use2"
+                        transform="rotate(90,13.466242,12.926086)" />
                     </g>
-                    <use
-                    x="0"
-                    y="0"
-                    xlink:href="#g1"
-                    id="use2"
-                    transform="rotate(90,13.466242,12.926086)" />
-                </g>
-            </svg>
-        </button>
-    </div>
-    {% for link in site.data.navbar_links %}
-        <a href="{{link.url}}" class="nav-link">{{ link.name }}</a>
-    {% endfor %}
-</nav>
+                </svg>
+            </button>
+        </div>
+        {% for link in site.data.navbar_links %}
+                <a href="{{link.url}}" class="nav-link">{{ link.name }}</a>
+        {% endfor %}
+    </nav>
+</div>
