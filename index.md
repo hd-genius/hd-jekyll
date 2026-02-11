@@ -1,5 +1,5 @@
 ---
-layout: flat_page
+layout: page
 ---
 
 {% include_relative docs/README.md %}

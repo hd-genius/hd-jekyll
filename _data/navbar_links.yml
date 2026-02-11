@@ -1,4 +1,12 @@
 - url: /
   name: Home
-- name: Some Page
-  url: /some-page
+- name: Demo Blog
+  url: /blog
+- name: Guides
+  links:
+  - name: Installation
+    url: /installation
+  - name: Configuration
+    url: /configuration
+- name: Contributing
+  url: /contributing
