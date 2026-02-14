@@ -2,7 +2,6 @@
 ---
 
 @import 'variables';
-@import 'math';
 @import 'breakpoints';
 
 @import 'base';
@@ -10,4 +9,6 @@
 
 @import 'page_layout';
 
-@import "highlighting";
+// equation/syntax styling
+@import 'code';
+@import 'math';
