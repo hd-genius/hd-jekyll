@@ -48,8 +48,25 @@
                 </svg>
             </button>
         </div>
+        <ul class="nav-item-list">
         {% for link in site.data.navbar_links %}
-                <a href="{{link.url}}" class="nav-link">{{ link.name }}</a>
+                <li>
+                    {% if link.links %}
+                        <details>
+                            <summary class="selectable nav-item expandable">{{ link.name }}</summary>
+                            <ul class="nav-item-list">
+                                {% for sublink in link.links %}
+                                    <li>
+                                        <a href="{{sublink.url}}" class="selectable nav-item nested">{{ sublink.name }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </details>
+                    {% else %}
+                        <a href="{{link.url}}" class="selectable nav-item">{{ link.name }}</a>
+                    {% endif %}
+                </li>
         {% endfor %}
+        </ul>
     </nav>
 </div>

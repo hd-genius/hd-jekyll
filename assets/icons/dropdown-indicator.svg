@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (fcd0343856, 2026-01-01)"
+   sodipodi:docname="dropdown-indicator.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="4.4400112"
+     inkscape:cx="52.589957"
+     inkscape:cy="51.238609"
+     inkscape:window-width="1534"
+     inkscape:window-height="831"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.264583"
+       id="path1"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="5.363162"
+       sodipodi:cy="7.1508827"
+       sodipodi:r1="19.255262"
+       sodipodi:r2="9.6276312"
+       sodipodi:arg1="0.52874275"
+       sodipodi:arg2="1.5759403"
+       inkscape:rounded="3.1225023e-17"
+       inkscape:randomized="0"
+       d="M 21.988964,16.864165 5.313638,16.778387 -11.361688,16.692608 -2.9497388,2.2942417 5.4622102,-12.104125 13.725587,2.3800199 Z"
+       inkscape:transform-center-x="-3.7140329"
+       inkscape:transform-center-y="0.028885221"
+       transform="matrix(0.00699568,0.77670699,-0.77670699,0.00699568,16.138814,8.9318148)" />
+  </g>
+</svg>

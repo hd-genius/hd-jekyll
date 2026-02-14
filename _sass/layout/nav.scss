@@ -58,23 +58,66 @@
     }
 }
 
-.nav-link {
+.nav-item-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0px; // corrected default list style
+    margin: 0px; // corrected default list style
+    align-items: stretch;
+
+    & > li {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@mixin nav-menu-marker($icon) {
+    &::before {
+        transform-origin: 75% 25%; // these values are necessary to fix the rotation
+        position: absolute;
+        display: block;
+        left: 1em;
+        top: 50%;
+        transform: translate(0, -50%); // adjusts for the element's height
+        content: "";
+        background-image: $icon;
+        height: 1em;
+        width: 1em;
+        background-size: contain;
+    }
+}
+
+.nav-item {
+    position: relative;
     background-color: transparent;
-    color: white;
+    color: $text-color;
     padding: 0.7em;
     border: none;
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.3s;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px $outline-color;
     cursor: pointer;
 
-    &:hover, &:focus-visible {
-    background-color: #00000045;
-}
+    &.expandable {
+        list-style: none; // remove the standard ::marker since it cannot be easily restyled
 
-    &:not(:last-child) {
-    border-bottom: solid 1px black;
+        &::-webkit-details-marker {
+            display: none; // remove the standard ::marker for webkit browsers
+        }
+
+        @include nav-menu-marker(url('/assets/icons/dropdown-indicator.svg'));
+
+        [open] > & { // when this section is expanded
+            &::before {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    &.nested {
+        @include nav-menu-marker(url('/assets/icons/nested-indicator.svg'));
     }
 }

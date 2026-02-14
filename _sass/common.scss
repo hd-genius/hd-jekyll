@@ -14,6 +14,14 @@
     }
 }
 
+.selectable {
+    transition: background-color 0.3s;
+    
+    &:hover, &:focus-visible {
+        background-color: #00000045;
+    }
+}
+
 .area-separator {
     height: 1px;
     background-color: black;
