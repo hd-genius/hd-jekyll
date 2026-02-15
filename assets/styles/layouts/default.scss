@@ -1,6 +1,15 @@
+---
+---
+
+@import 'variables';
+@import 'utils/breakpoints';
+
 @import 'includes/header';
 @import 'includes/nav';
 @import 'includes/footer';
+
+@import 'components';
+@import 'common';
 
 html {
   display: flex;
