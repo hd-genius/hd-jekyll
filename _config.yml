@@ -5,7 +5,6 @@ baseurl: ""
 url: "http://hd-jekyll.hdgenius.me"
 
 markdown: kramdown
-theme: minima
 
 sass:
   sass_dir: _sass
