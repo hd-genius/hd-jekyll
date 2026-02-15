@@ -94,7 +94,6 @@
 .nav-item {
     position: relative;
     background-color: transparent;
-    color: variables.$text-color;
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
@@ -103,6 +102,10 @@
     border-bottom: solid 1px variables.$outline-color;
     cursor: pointer;
     transition: background-color 0.3s;
+
+    &, &:visited {
+        color: variables.$text-color;
+    }
     
     &:hover, &:focus-visible {
         background-color: #00000045;
