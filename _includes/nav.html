@@ -49,24 +49,24 @@
             </button>
         </div>
         <ul class="nav-item-list">
-        {% for link in site.data.navbar_links %}
+            {% for link in site.data.navbar_links %}
                 <li>
                     {% if link.links %}
                         <details>
-                            <summary class="selectable nav-item expandable">{{ link.name }}</summary>
+                            <summary class="nav-item expandable">{{ link.name }}</summary>
                             <ul class="nav-item-list">
                                 {% for sublink in link.links %}
                                     <li>
-                                        <a href="{{sublink.url}}" class="selectable nav-item nested">{{ sublink.name }}</a>
+                                        <a href="{{sublink.url}}" class="nav-item nested">{{ sublink.name }}</a>
                                     </li>
                                 {% endfor %}
                             </ul>
                         </details>
                     {% else %}
-                        <a href="{{link.url}}" class="selectable nav-item">{{ link.name }}</a>
+                        <a href="{{link.url}}" class="nav-item">{{ link.name }}</a>
                     {% endif %}
                 </li>
-        {% endfor %}
+            {% endfor %}
         </ul>
     </nav>
 </div>

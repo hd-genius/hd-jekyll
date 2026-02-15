@@ -15,7 +15,7 @@
     padding: 0px;
     border-right: solid 1px black;
     transition: width 500ms, border-width 500ms ease-out;
-  
+
     &:has(#site-nav-menu:not(.shown)) {
         width: 0px;
         border-width: 0;
@@ -93,13 +93,18 @@
     position: relative;
     background-color: transparent;
     color: $text-color;
-    padding: 0.7em;
-    border: none;
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
+    padding: 0.7em;
+    border: none;
     border-bottom: solid 1px $outline-color;
     cursor: pointer;
+    transition: background-color 0.3s;
+    
+    &:hover, &:focus-visible {
+        background-color: #00000045;
+    }
 
     &.expandable {
         list-style: none; // remove the standard ::marker since it cannot be easily restyled
