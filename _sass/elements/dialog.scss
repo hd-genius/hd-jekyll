@@ -1,8 +1,8 @@
 dialog {
     background-color: $block-background-color;
     border-radius: $block-border-radius;
-    padding: $block-padding $block-padding * 1.5;
-    border: 1px solid black;
+    padding: $block-vertical-padding $block-horizontal-padding;
+    border: 1px solid $outline-color;
     color: $text-color;
 
     &::backdrop {
