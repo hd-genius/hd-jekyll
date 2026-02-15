@@ -2,12 +2,35 @@
 layout: default
 ---
 
+<link href="/assets/styles/layouts/post.css" rel="stylesheet" type="text/css">
+
 <article id="post-content" class="block-element">
-    <header class="section-header">
-        <h1>{{ page.title }}</h1>
-        <div class="post-preview-data">
-            <span>{{ page.date | date: "%B %d, %Y"}}</span>
-            <span>{{ page.author }}</span>
+    <header id="post-header" class="section-header">
+        <div class="post-identifying-info">
+            <h1 class="post-title">{{ page.title }}</h1>
+            {% if page.tags.size > 0 %}
+                <ul class="post-header-tag-list post-categorization-list">
+                    {% for tag in page.tags %}
+                    <li>
+                        <a>#{{ tag }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            {% if page.categories.size > 0 %}
+                <ul class="post-header-category-list post-categorization-list">
+                    {% for category in page.categories %}
+                    <li>
+                        <a>{{ category }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        <div class="post-creation-info">
+            <span>Created on {{ page.date | date: "%B %d, %Y"}}</span>
+            <span>Last updated on {{ page.update_date | date: "%B %d, %Y"}}</span>
+            <span>Written by {{ page.author }}</span>
         </div>
     </header>
     {{ content }}

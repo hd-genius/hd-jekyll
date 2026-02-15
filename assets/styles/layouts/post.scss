@@ -1,0 +1,33 @@
+---
+---
+
+#post-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-identifying-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-categorization-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0.5em;
+
+    > li {
+        margin-right: 1em;
+    }
+}
+
+.post-creation-info {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
