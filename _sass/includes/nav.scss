@@ -1,3 +1,5 @@
+@use 'variables';
+
 @mixin nav-sizing {
     width: var(--expanded-nav-width);
     height: 100vh;
@@ -35,7 +37,7 @@
     padding: 0;
     overflow-y: scroll;
     @include nav-sizing;
-    background-color: $block-background-color;
+    background-color: variables.$block-background-color;
 }
 
 #nav-header {
@@ -92,13 +94,13 @@
 .nav-item {
     position: relative;
     background-color: transparent;
-    color: $text-color;
+    color: variables.$text-color;
     font-size: 1em;
     font-weight: bold;
     text-decoration: none;
     padding: 0.7em;
     border: none;
-    border-bottom: solid 1px $outline-color;
+    border-bottom: solid 1px variables.$outline-color;
     cursor: pointer;
     transition: background-color 0.3s;
     

@@ -1,7 +1,9 @@
+@use 'variables';
+
 :link {
-    color: $link-color;
+    color: variables.$link-color;
 }
   
 :visited {
-    color: $visited-link-color;
+    color: variables.$visited-link-color;
 }

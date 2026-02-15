@@ -1,9 +1,11 @@
+@use 'variables';
+
 dialog {
-    background-color: $block-background-color;
-    border-radius: $block-border-radius;
-    padding: $block-vertical-padding $block-horizontal-padding;
-    border: 1px solid $outline-color;
-    color: $text-color;
+    background-color: variables.$block-background-color;
+    border-radius: variables.$block-border-radius;
+    padding: variables.$block-vertical-padding variables.$block-horizontal-padding;
+    border: 1px solid variables.$outline-color;
+    color: variables.$text-color;
 
     &::backdrop {
         background-color: #ffffff;

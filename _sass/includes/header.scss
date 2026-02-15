@@ -1,13 +1,15 @@
+@use 'variables';
+
 #floating-header {
   position: sticky;
   top: 0;
 
   // used to hide elements as they move above the header
-  padding-top: $block-spacing;
-  margin-top: - $block-spacing;
+  padding-top: variables.$block-spacing;
+  margin-top: - variables.$block-spacing;
 
-  $fade-distance: $block-spacing * 0.6;
-  background-image: linear-gradient(to top, transparent, rgba($body-background-color, 0.5) ($fade-distance / 4), rgba($body-background-color, 0.75) ($fade-distance / 2), $body-background-color $fade-distance);
+  $fade-distance: variables.$block-spacing * 0.6;
+  background-image: linear-gradient(to top, transparent, rgba(variables.$body-background-color, 0.5) ($fade-distance / 4), rgba(variables.$body-background-color, 0.75) ($fade-distance / 2), variables.$body-background-color $fade-distance);
 }
 
 #site-header {

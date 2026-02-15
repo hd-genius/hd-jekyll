@@ -1,9 +1,11 @@
+@use 'variables';
+
 .block-element {
-    background-color: $block-background-color;
-    border-radius: $block-border-radius;
-    padding: $block-vertical-padding $block-horizontal-padding;
-    border: 1px solid $outline-color;
-    margin: 0 0 $block-spacing 0;
+    background-color: variables.$block-background-color;
+    border-radius: variables.$block-border-radius;
+    padding: variables.$block-vertical-padding variables.$block-horizontal-padding;
+    border: 1px solid variables.$outline-color;
+    margin: 0 0 variables.$block-spacing 0;
 
     & > :first-child {
         margin-top: 0;
@@ -17,11 +19,12 @@
 .section-header {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid $outline-color;
-    padding: 0px $block-horizontal-padding 1rem;
-    margin: 0px #{$block-horizontal-padding * -1};
+    border-bottom: 1px solid variables.$outline-color;
+    padding: 0px variables.$block-horizontal-padding 1rem;
+    margin: 0px #{variables.$block-horizontal-padding * -1};
     
     h1, h2, h3, h4, h5, h6 {
         text-align: center;
+        margin: 0px;
     }
 }

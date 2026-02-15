@@ -1,15 +1,15 @@
 ---
 ---
 
-@import 'variables';
-@import 'utils/breakpoints';
+@use 'variables';
+@use 'utils/breakpoints';
 
-@import 'includes/header';
-@import 'includes/nav';
-@import 'includes/footer';
+@use 'includes/header';
+@use 'includes/nav';
+@use 'includes/footer';
 
-@import 'components';
-@import 'common';
+@use 'components';
+@use 'common';
 
 html {
   display: flex;
@@ -20,8 +20,8 @@ html {
 }
 
 body {
-  background-color: $body-background-color;
-  color: $text-color;
+  background-color: variables.$body-background-color;
+  color: variables.$text-color;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: row;
@@ -34,14 +34,13 @@ body {
 
 #content-area {
   display: flex;
-
   flex-direction: column;
   justify-content: start;
   min-height: calc(100vh - 2rem);
   width: min(80ch, calc(100vw - 2rem));
   flex-grow: 1;
   align-items: stretch;
-  margin: $block-spacing;
+  margin: variables.$block-spacing;
 }
 
 main {
