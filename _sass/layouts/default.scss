@@ -2,15 +2,6 @@
 @import 'includes/nav';
 @import 'includes/footer';
 
-.section-header {
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-  }
-  
-  display: flex;
-  flex-direction: column;
-}
-
 html {
   display: flex;
   flex-direction: column;
@@ -46,9 +37,4 @@ body {
 
 main {
   flex-grow: 1;
-}
-
-.post-preview {
-  display: flex;
-  flex-direction: column;
 }

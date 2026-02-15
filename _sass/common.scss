@@ -15,7 +15,13 @@
 }
 
 .section-header {
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px solid $outline-color;
     padding: 0px $block-horizontal-padding 1rem;
     margin: 0px #{$block-horizontal-padding * -1};
+    
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
 }
