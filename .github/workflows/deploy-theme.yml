@@ -13,7 +13,7 @@ permissions:
 
 # Allow only one concurrent deployment, cancel any in progress and run only the latest queued
 concurrency:
-  group: "deploy-theme"
+  group: "gem-deploy"
   cancel-in-progress: false
 
 jobs:
@@ -29,8 +29,10 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.4' # Not needed with a .ruby-version, .tool-versions or mise.toml
-          bundler-cache: false
+          bundler-cache: false # temporarily disabled because the cache was causing the bundle install step to fail
       - name: Build Gem
         run: gem build
       - name: Publish Gem
         run: gem push $(ls | grep "jekyll-theme-hd-jekyll.*.gem")
+        env:
+          GEM_HOST_API_KEY: ${{ secrets.RUBY_GEM_API_KEY }}
