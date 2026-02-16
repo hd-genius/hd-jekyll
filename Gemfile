@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll"
+gem "jekyll", "~> 4.0"
 
 gem "kramdown-parser-gfm"
 
@@ -19,9 +19,7 @@ gem "kramdown-parser-gfm"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed"
-  gem "jekyll-sass-converter"
-  # gem "jekyll-seo-tag"
-  # gem "jekyll-sitemap"
+  gem "jekyll-sass-converter", "~>3.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

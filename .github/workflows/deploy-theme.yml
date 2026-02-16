@@ -1,0 +1,35 @@
+name: Deploy Theme
+
+# This should only be run when a release is published
+on:
+  release:
+    types: [published]
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  id-token: write
+
+# Allow only one concurrent deployment, cancel any in progress and run only the latest queued
+concurrency:
+  group: "deploy-theme"
+  cancel-in-progress: false
+
+jobs:
+  deploy-gem:
+    name: Push gem to RubyGems.org
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          persist-credentials: false
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+          ruby-version: ruby
+      - name: Build Gem
+        run: gem build
+      - name: Publish Gem
+        run: gem push $(ls | grep "jekyll-theme-hd-jekyll.*.gem")
