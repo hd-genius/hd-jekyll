@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.0"
 
-gem "kramdown-parser-gfm"
+gem "kramdown-parser-gfm", "~> 1.0"
 
 group :jekyll_plugins do
   gem "jekyll-sass-converter", "~>3.0"

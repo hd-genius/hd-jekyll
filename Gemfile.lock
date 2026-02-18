@@ -83,6 +83,7 @@ DEPENDENCIES
   jekyll-paginate (~> 1.1)
   jekyll-sass-converter (~> 3.0)
   jekyll-sitemap (~> 1.4)
+  kramdown-parser-gfm (~> 1.0)
   tzinfo-data
   wdm (~> 0.1.0)
 
