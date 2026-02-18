@@ -11,7 +11,7 @@
   margin-top: - variables.$block-spacing;
 
   $fade-distance: variables.$block-spacing * 0.6;
-  background-image: linear-gradient(to top, transparent, rgba(variables.$body-background-color, 0.5) ($fade-distance / 4), rgba(variables.$body-background-color, 0.75) ($fade-distance / 2), variables.$body-background-color $fade-distance);
+  background-image: linear-gradient(to top, transparent, rgba(variables.$body-background-color, 0.5) math.div($fade-distance, 4), rgba(variables.$body-background-color, 0.75) math.div($fade-distance, 2), variables.$body-background-color $fade-distance);
 }
 
 #site-header {
