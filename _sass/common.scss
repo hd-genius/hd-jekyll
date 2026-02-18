@@ -14,6 +14,11 @@
     & > :last-child {
         margin-bottom: 0;
     }
+
+    &.secondary {
+        border-radius: #{variables.$block-border-radius * 0.75};
+        background-color: variables.$secondary-block-background-color;
+    }
 }
 
 .section-header {
