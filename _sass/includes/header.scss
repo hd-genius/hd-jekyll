@@ -1,4 +1,6 @@
-@use 'variables';
+@use 'sass:math';
+
+@use '../variables';
 
 #floating-header {
   position: sticky;
