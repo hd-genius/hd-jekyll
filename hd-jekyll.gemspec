@@ -16,4 +16,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "kramdown-parser-gfm"
   spec.add_runtime_dependency "jekyll-sass-converter", "~>3.1"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
+  spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
 end
