@@ -103,7 +103,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
 
-    &, &:visited {
+    &, &:link, &:visited {
         color: variables.$text-color;
     }
     
