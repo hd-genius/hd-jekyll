@@ -33,6 +33,6 @@ jobs:
       - name: Build Gem
         run: gem build
       - name: Publish Gem
-        run: gem push $(ls | grep "jekyll-theme-hd-jekyll.*.gem")
+        run: gem push $(ls | grep "jekyll-theme-nouveau.*.gem")
         env:
           GEM_HOST_API_KEY: ${{ secrets.RUBY_GEM_API_KEY }}
