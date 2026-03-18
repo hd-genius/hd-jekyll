@@ -11,19 +11,19 @@ title: Installation
 If you use bundler (recommended):
 
 ```shell
-bundle add hd-jekyll
+bundle add jekyll-theme-nouveau
 ```
 
 Otherwise:
 
 ```shell
-gem install hd-jekyll
+gem install jekyll-theme-nouveau
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: hd-jekyll
+theme: jekyll-theme-nouveau
 ```
 
 ## Fork
